@@ -1,0 +1,24 @@
+﻿@*@{
+    ViewBag.Title = "Home Page";
+}*@
+
+@model IEnumerable<Blog_App_A3.Models.Blog>
+
+<div>
+        <br />
+        @foreach (var blog in Model)
+        {
+            <div>
+                <b>@blog.author </b>
+                <br />
+                @blog.blog
+                <br />
+                <b><a href="Home/EditBlog/@blog.Id">Edit blog</a></b>
+
+                <br />
+                <br />
+            </div>
+        }
+
+
+</div>

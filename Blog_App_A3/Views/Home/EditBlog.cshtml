@@ -1,0 +1,18 @@
+﻿@model Blog_App_A3.Models.Blog
+
+
+<form action="/Home/Edit/@Model.Id" method="post">
+    <b>Author</b><br />
+    <input type="text" name="author" class="input-lg" value="@Model.author"/>
+    <br />
+    <br />
+
+    <b>Blog</b><br />
+               <textarea name="blog" placeholder="write/paste your blog content" rows="10" cols="100" class="input-lg" maxlength="600">@Model.blog</textarea>
+
+    <br />
+    <br />
+
+    <input type="submit" name="Add" />
+
+</form>
